@@ -20,7 +20,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body data-page>
     <!-- Header section -->
     <header class="header" data-header>
       <div class="container header-container">
@@ -66,7 +66,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-button hero" type="button">Заказать услугу</button>
+          <button class="main-button hero" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="our-osobennosti">
@@ -580,9 +580,9 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn">
+        <button class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="20px" height="20px">
             <use href="./images/icons/icomoon/icons.svg#icon-close">
 
@@ -594,5 +594,6 @@
     </div>
     <script src="../goit-markup-hw-05/js/header-scroll.js">
       </script>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
