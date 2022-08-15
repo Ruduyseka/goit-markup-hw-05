@@ -43,6 +43,20 @@ body {
     ul,ol{
         list-style: none;
     }
+        /* .header {
+             background-color: rgba(0, 0, 0, 0.2);
+             ;
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             z-index: 100;
+         }
+        
+         .header.no-transparency {
+             background-color: rgba(24, 138, 232, 0.4);
+             backdrop-filter: blur(8px);
+         }  */
      
     .container {
         width: 1200px;
@@ -54,11 +68,13 @@ body {
     .no-probel{
         display: block;
     }
-    .header-container,
+    
+     .header-container,
     .adress{
         display: flex;
         align-items: center;
     } 
+
     .logo-header{
         margin-right: 93px;
         padding-top: 24px;
@@ -79,6 +95,7 @@ body {
         display: flex;
         gap: 50px;
     }
+       
        
     .mail{
  font-weight: 500;
