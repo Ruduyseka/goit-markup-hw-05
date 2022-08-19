@@ -595,6 +595,11 @@ transition: box-shadow var(--anim-fast);
     width: 100%;
     height: 100%;
     background-color:rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+     pointer-events: initial;
+     transition: opaciti 300ms ease-out,
+     visibility 300ms ease-out;
     z-index: 100;
     
     }
@@ -607,8 +612,7 @@ transition: box-shadow var(--anim-fast);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: 
-    translate(-50%,-50%) scale(1) rotate(0);
+    transform:translate(-50%,-50%) scale(0.3) rotate(1turn);
 
     
     width: 528px;
@@ -618,14 +622,11 @@ transition: box-shadow var(--anim-fast);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
-    transition: transform 500ms ease-in-out 300ms,
-    opacity 500ms ease-in-out 300ms;
-    }
+    transition: transform 400ms ease-in-out 200ms,
+   }
         .backdrop.is-hidden .modal{
             opacity: 0;
-        transform:translate(-50%, -50%) 
-        scale(0.8)
-        rotate(2turn);
+        transform: translate(-50%, -50%) scale(0.2) rotate(1turn);
         }
 .modal-btn{
     box-sizing: border-box;
