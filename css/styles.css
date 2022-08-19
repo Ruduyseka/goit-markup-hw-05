@@ -598,9 +598,9 @@ transition: box-shadow var(--anim-fast);
     opacity: 1;
     visibility: visible;
      pointer-events: initial;
-     transition: opaciti 300ms ease-out,
-     visibility 300ms ease-out;
-    z-index: 100;
+     transition: opacity 600ms ease-out,
+     visibility 600ms ease-out;
+    z-index: 1000;
     
     }
     .backdrop.is-hidden{
@@ -612,7 +612,7 @@ transition: box-shadow var(--anim-fast);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%) scale(0.3) rotate(1turn);
+    transform:translate(-50%,-50%) scale(1) rotate(0);
 
     
     width: 528px;
@@ -623,6 +623,7 @@ transition: box-shadow var(--anim-fast);
     border-radius: 4px;
     opacity: 1;
     transition: transform 400ms ease-in-out 200ms,
+    opacity 400ms ease-in-out 200ms
    }
         .backdrop.is-hidden .modal{
             opacity: 0;
