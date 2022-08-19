@@ -622,9 +622,9 @@ transition: box-shadow var(--anim-fast);
     opacity 500ms ease-in-out 300ms;
     }
         .backdrop.is-hidden .modal{
-            opacity: 1;
+            opacity: 0;
         transform:translate(-50%, -50%) 
-        scale(0.2)
+        scale(0.8)
         rotate(2turn);
         }
 .modal-btn{
